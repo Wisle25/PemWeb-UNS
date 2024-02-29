@@ -77,6 +77,7 @@ h1 {
 .main-container > div > h1 {
     background: -webkit-linear-gradient(#E1D7C6, #FFFBF5);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
