@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Market</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Styling -->
+  <style>
+    * {
+      font-family: "Poppins"
+    }
+
+    .custom-box-shadow {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  </style>
+</head>
+<body>
+    <header class="flex align-middle justify-between p-4 w-full text-white bg-blue-900 font-bold fixed top-0">
+      <h1 class="font-['Lobster'] text-3xl ml-10">Game Market</h1>
+      <nav class="h-full my-auto mr-10">
+        <a class="mx-2 text-gray-300 cursor-pointer">Home</a>
+        <a class="mx-2 cursor-pointer hover:text-gray-200">Store</a>
+        <a class="mx-2 cursor-pointer hover:text-gray-200">Cart</a>
+      </nav>
+    </header>
+    
+    <main class="mt-8 w-7/12 mx-auto">
+      <article class="grid grid-cols-5 grid-rows-3 gap-x-7">
+        <img class="row-start-1 col-start-1 row-end-4 col-end-4 p-4" src="../assets/GamepadLogo.png" alt="Gamepad Logo">
+        <section class="col-start-3 row-start-1 col-end-6 row-end-3 flex flex-col justify-center items-center gap-y-6 p-3">
+          <h2 class="font-['Bebas_Neue'] text-4xl tracking-wide">Get any game!</h2>
+          <p class="md:text-sm">Don't know about where to find or release games? Look no further, here you’ll find a complete selection of games ranging from action and horror to indie games.</p>
+        </section>
+        <section class="col-start-3 row-start-3 col-end-6 row-end-4 w-fit mx-auto">
+          <button class="bg-blue-900 p-3 rounded-md font-bold hover:bg-blue-400 text-white">See Best Game</button>
+          <button class="border-blue-900 border-4 text-blue-900 p-3 rounded-md font-bold hover:text-blue-400 hover:border-blue-400 mx-3">More Game</button>
+        </section>
+      </article>
+
+      <article class="bg-blue-900 p-6 rounded-md">
+        <h2 class="font-['Bebas_Neue'] text-4xl w-fit mx-auto text-white mb-3">popular Game nowadays</h2>
+        <section class="flex justify-center bg-white p-5 rounded-sm align-center gap-x-5">
+          <figure class="flex flex-col w-3/12 custom-box-shadow rounded-xl">
+            <img class="h-30 object-cover rounded-t-xl" src="../assets/5784794.jpg" alt="Valorant">
+            <div class="p-4 h-full flex flex-col justify-between gap-y-4">
+              <h3 class="font-bold">Valorant</h3>
+              <figcaption class="text-xs">VALORANT is a competitive and global game that blends gunplay and abilities. Choose from 13 Agents with unique skills and fight on different maps across modes.</figcaption>
+              <div>
+                <button class="bg-blue-900 p-3 rounded-md font-bold hover:bg-blue-400 text-white text-sm">View</button>
+                <button class="border-blue-900 border-4 text-blue-900 p-3 rounded-md font-bold hover:text-blue-400 hover:border-blue-400 mx-3 text-xs">Add To Cart</button>
+              </div>
+            </div>
+          </figure>
+          <figure class="flex flex-col w-3/12 custom-box-shadow rounded-xl">
+            <img class="h-30 object-cover rounded-t-xl" src="../assets/a7qlyr6n4nq31.jpg" alt="Valorant">
+            <div class="p-4 h-full flex flex-col justify-between gap-y-4">
+              <h3 class="font-bold">Red Dead Redemption 2</h3>
+              <figcaption class="text-xs">Red Dead Redemption is a 2010 action-adventure game developed by Rockstar San Diego and published by Rockstar Games.</figcaption>
+              <div>
+                <button class="bg-blue-900 p-3 rounded-md font-bold hover:bg-blue-400 text-white text-sm">View</button>
+                <button class="border-blue-900 border-4 text-blue-900 p-3 rounded-md font-bold hover:text-blue-400 hover:border-blue-400 mx-3 text-xs">Add To Cart</button>
+              </div>
+            </div>
+          </figure>
+          <figure class="flex flex-col w-3/12 custom-box-shadow rounded-xl">
+            <img class="h-30 object-cover rounded-t-xl" src="../assets/lethal.jpg" alt="Valorant">
+            <div class="p-4 h-full flex flex-col justify-between gap-y-4">
+              <h3 class="font-bold">Lethal Company</h3>
+              <figcaption class="text-xs">Lethal Company is a cooperative survival horror video game created by Zeekerss. It released in early access in October 2023 and gained popularity on the Steam storefront.</figcaption>
+              <div>
+                <button class="bg-blue-900 p-3 rounded-md font-bold hover:bg-blue-400 text-white text-sm">View</button>
+                <button class="border-blue-900 border-4 text-blue-900 p-3 rounded-md font-bold hover:text-blue-400 hover:border-blue-400 mx-3 text-xs">Add To Cart</button>
+              </div>
+            </div>
+          </figure>
+        </section>
+      </article>
+
+      <article class="p-10 flex flex-col justify-center items-center w-2/3 mx-auto gap-y-3">
+        <h2 class="font-['Bebas_Neue'] text-4xl tracking-wide">Can't find Your Game?</h2>
+        <p>Don't see your game in the best category? Find more in our store or release your own game by contacting us!</p>
+
+        <div>
+          <button class="bg-blue-900 p-3 rounded-md font-bold hover:bg-blue-400 text-white">Go To Store</button>
+          <button class="border-blue-900 border-4 text-blue-900 p-3 rounded-md font-bold hover:text-blue-400 hover:border-blue-400 mx-3">Contact Us</button>
+        </div>
+      </article>
+    </main>
+    
+    <footer class="flex justify-between items-center bg-blue-900 p-4 text-white">
+      <section>&copy;2024 <span class="font-['Lobster'] text-2xl">Game Market</span></section>
+      <section class="flex gap-x-5">
+        <img class="w-12" src="../assets/GithubIcon.png" alt="GitHub">
+        <img class="w-12" src="../assets/MetaIcon.png" alt="Meta">
+        <img class="w-12" src="../assets/InstagramIcon.png" alt="Instagram">
+      </section>
+      <section>Alamat, Saya, Surakarta</section>
+    </footer>
+</body>
+</html>

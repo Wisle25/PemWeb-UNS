@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+}
+
+.navbar-container {
+    background-color: #070F2B;
+    color: white;
+    font-size: 1.15em;
+    font-weight: bold;
+    padding: 1em;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    font-family: "Lobster";
+    font-size: 1.7em;
+}
+
+.navbar-flex {
+    margin: auto;
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.navlist {
+    display: flex;
+    gap: 1.1em;
+}
+
+li, a {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+a:hover, button:hover {
+    color: #DFD7BF;
+}
+
+.main-container {
+    display: flex;
+    margin: 3.5em auto 2em;
+    padding: 2em 0 .1em 0;
+    width: 78%;
+    font-size: 2em;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2em;
+    color: white;
+}
+
+.main-container > div > p {
+    line-height: 1.1em;
+    margin: 0 0 .8em;
+}
+
+h1 {
+    font-family: "Bebas Neue";
+    letter-spacing: .12em;
+    color: #0082c8;
+}
+
+.profil-image {
+    width: 40%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 1em;
+}
+
+.btn-a, .btn-b {
+    padding: 1em;
+    background-color: white;
+    border: 0;
+    border-radius: .5em;
+    font-weight: bold;
+    color: #0082c8;
+    font-size: .7em;
+}
+
+.btn-b {
+    background-color: transparent;
+    color: white;
+    border: 4px solid #FF407D;
+}
+
+.btn-a:hover, .btn-b:hover {
+    color: #40A2E3;
+    cursor: pointer;
+}
+
+.contact-container {
+    background-color: white;
+    border-radius: 1em;
+    margin: auto;
+    padding: .5em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.media-container {
+    display: flex;
+    gap: 2em;
+}
+
+.media-icon {
+    width: 4.5em;
+    height: 4.5em;
+}

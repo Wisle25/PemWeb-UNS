@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jualan Produk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="w-11/12 xl:w-8/12 h-fit absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] m-0 font-['Poppins'] bg-blue-500 text-white p-4 rounded-sm">
+    <h1 class="w-fit mx-auto font-['Bebas_Neue'] text-[2.5em] tracking-wide">Penghitungan Produk</h1>
+    
+    <!-- Form untuk menambahkan produk -->
+    <form class="bg-white text-black p-3 rounded-sm" onsubmit="onFormSubmit(event)">
+      <section class="flex gap-x-1">
+        <div class="flex flex-col content-center w-[180%]">
+          <label for="name">Nama Produk:</label>
+          <input placeholder="Nama Produk" class="p-1 border-2 border-blue-400" type="text" id="name" name="name" required>
+        </div>
+        <div class="flex flex-col content-center w-[70%]">
+          <label for="price">Harga Produk: (Rp)</label>
+          <input placeholder="Harga produk" class="p-1 border-2 border-blue-400" type="number" id="price" name="price" required>
+        </div>
+        <div class="flex flex-col content-center w-[11.5%]">
+          <label for="discount">Diskon: (%)</label>
+          <input placeholder="Diskon" class="p-1 border-2 border-blue-400" type="number" id="discount" name="price" required>
+        </div>
+        <div class="flex flex-col content-center w-[8%]">
+          <label for="amount">Jumlah:</label>
+          <input placeholder="Jumlah" class="p-1 border-2 border-blue-400" type="number" id="amount" name="amount" required>
+        </div>
+      </section>
+      <input class="mt-3 p-2 w-full rounded-md text-xl font-bold border-4 border-blue-500 text-blue-500 cursor-pointer hover:text-blue-700 hover:border-blue-700" type="submit" value="Tambahkan">
+    </form>
+    
+    <!-- List produk beserta jumlahnya-->
+    <section class="py-2 bg-white text-black mt-4 h-60 rounded-sm overflow-y-scroll">
+      <table class="w-full text-left table-auto min-w-max">
+        <thead class="border-b-4">
+          <tr>
+            <th class="p-2">Nama Produk</th>
+            <th class="p-2">Harga Diskon</th>
+            <th class="p-2">Jumlah</th>
+            <th class="p-2">Total Harga</th>
+          </tr>
+        </thead>
+        <tbody class="font-sans" id="product-list">
+
+        </tbody>
+      </table>
+    </section>
+
+      <!-- Perhitungan total biaya -->
+    <section class="w-1/2 flex justify-between mt-4 bg-white text-black p-2 rounded-sm relative right-0">
+      <h2>Total Biaya: </h2>
+      <p id="total-price">Rp0</p>
+    </section>
+  </main>
+  
+  <!-- Script -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+</body>
+</html>
